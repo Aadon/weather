@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="app.css">
 </head>
+
 <body>
-  <div class="location">
-    <h1 class="location-timezone">
-      Time Zone
-    </h1>
-    <p>icon</p>
-  </div>
-  <div class="temperature">
-    <div class="degree-section">
-    <h2 class="temperature-degree">34</h2>
-    <span>F</span>
+  <section class="top-banner">
+    <div class="container">
+      <h1 class="heading">Simple Weather App</h1>
+      <form>
+        <input type="text" id="search" name="search" placeholder="Search your city here" autofocus>
+        <button type="submit">Submit</button>
+        <span class="msg"></span>
+      </form>
     </div>
-    <div class="temperature-description">Oh! the rains are here again.</div>
+  </section class="second-section">
+  <div class="container">
+    <ul class="cities">
+      <li class="city">
+        <h2 class="city-name" data-name="...">
+          <span>...</span>
+          <sup>...</sup>
+        </h2>
+        <span class="city-temp">...<sup>0C</sup></span>
+        <figure>
+          <img src="" alt="" class="city-icon">
+          <figcaption>...</figcaption>
+        </figure>
+      </li>
+    </ul>
   </div>
   <script src="app.js"></script>
 </body>
+
 </html>
